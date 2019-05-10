@@ -1,8 +1,10 @@
-body {
+.Home {
     background-color: pink;
 } 
 .new{
     text-align: center;
-    font: bold;
-    
+    font: bold;   
+}
+.Test{
+    background-color: red;   
 }
