@@ -12,7 +12,22 @@ header {
     text-align: left;
     font: bold;   
 }
-.Test{
+.Text{
     background-color: red;
     text-align: left;   
+}
+
+#name{margin-top: 50px}
+#nickname{margin-top: 50px}
+#old{margin-top: 50px}
+
+#me_pic{
+    height: 400px;
+    border-block-start-width: 500pt;
+    margin: 20px 40px 50px 200px;
+}
+
+footer{
+    background-color: yellow;
+    text-align: center;
 }
