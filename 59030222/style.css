@@ -1,8 +1,15 @@
-.Home {
-    background-color:palevioletred;
+body{
+    background:peru;
+}
+header {
+    background-color:burlywood;
+    text-align: center;
+    font-size: 1.5em ;
+    color:red;
+
 } 
 .new{
-    text-align: center;
+    text-align: left;
     font: bold;   
 }
 .Test{
