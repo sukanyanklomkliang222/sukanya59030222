@@ -1,5 +1,5 @@
 body{
-    background:peru;
+    background : #377375;
 }
 header {
     background-color:burlywood;
@@ -8,13 +8,19 @@ header {
     color:red;
 
 } 
+main{
+    display: flex;
+}
 .new{
     text-align: left;
     font: bold;   
 }
 .Text{
-    background-color: red;
+    background-color: #486D87;
     text-align: left;   
+}
+.text_scottish{
+    text-align: center;
 }
 
 #name{margin-top: 50px}
@@ -23,8 +29,9 @@ header {
 
 #me_pic{
     height: 400px;
-    border-block-start-width: 500pt;
+    width: 100;
     margin: 20px 40px 50px 200px;
+    
 }
 
 footer{
