@@ -5,7 +5,7 @@ header {
     background-color:burlywood;
     text-align: center;
     font-size: 1.5em ;
-    color:red;
+    color:#CE4A50;
 
 } 
 main{
@@ -17,10 +17,13 @@ main{
 }
 .Text{
     background-color: #486D87;
-    text-align: left;   
+    text-align: left;
+    color:#DDEFE3 ;  
 }
+
 .text_scottish{
     text-align: center;
+    color: #DDEFE3;
 }
 
 #name{margin-top: 50px}
@@ -34,7 +37,17 @@ main{
     
 }
 
+article{
+    display: flex;
+}
+.text_american_shorthair{
+    text-align: center;
+    color: #DDEFE3;
+    
+}
+
 footer{
     background-color: yellow;
     text-align: center;
+    color:grey;
 }
