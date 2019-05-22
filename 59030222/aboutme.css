@@ -1,0 +1,29 @@
+.Text{
+    background-color: #486D87;
+    text-align: left;
+    color:#DDEFE3 ;  
+}
+
+#me_pic{
+    height: 400px;
+    width: 100;
+    margin: 20px 40px 50px 200px;
+    
+}
+
+#name{margin-top: 50px}
+#nickname{margin-top: 50px}
+#old{margin-top: 50px}
+
+footer{
+    background-color: yellow;
+    text-align: center;
+    color:grey;
+}
+
+
+
+.pic_logo{
+    
+}
+

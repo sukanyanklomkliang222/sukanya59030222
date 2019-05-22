@@ -15,27 +15,11 @@ main{
     text-align: left;
     font: bold;   
 }
-.Text{
-    background-color: #486D87;
-    text-align: left;
-    color:#DDEFE3 ;  
-}
-
 .text_scottish{
     text-align: center;
     color: #DDEFE3;
 }
 
-#name{margin-top: 50px}
-#nickname{margin-top: 50px}
-#old{margin-top: 50px}
-
-#me_pic{
-    height: 400px;
-    width: 100;
-    margin: 20px 40px 50px 200px;
-    
-}
 
 article{
     display: flex;
@@ -51,3 +35,4 @@ footer{
     text-align: center;
     color:grey;
 }
+
