@@ -1,38 +1,43 @@
 body{
-    background : #377375;
+    background : #F7F6E7;
 }
 header {
-    background-color:burlywood;
+    background-color:#777D71;
     text-align: center;
-    font-size: 1.5em ;
-    color:#CE4A50;
+    font-size: 8em ;
+    color:#F7F6E7;
 
 } 
 main{
     display: flex;
+    justify-content: space-evenly;
 }
 .new{
     text-align: left;
     font: bold;   
 }
 .text_scottish{
-    text-align: center;
-    color: #DDEFE3;
+    text-align: left;
+    color: #3C1F0E;
 }
 
-
-article{
-    display: flex;
-}
 .text_american_shorthair{
-    text-align: center;
-    color: #DDEFE3;
+    text-align: left;
+    color: #3C1F0E;
     
 }
 
+.text_british{
+    text-align: left;
+    color: #3C1F0E;
+}
+
+
+
+
 footer{
-    background-color: yellow;
-    text-align: center;
+    background-color:#BBD38B;
+    text-align: left;
     color:grey;
 }
 
