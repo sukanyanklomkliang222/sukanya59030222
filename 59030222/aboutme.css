@@ -67,6 +67,10 @@ nav a{
     color: rgb(255,255,255);
 }
 
+#name1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #9A073C;S
+}
 
 footer{
     background-color:#BBD38B;
