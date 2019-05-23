@@ -6,38 +6,46 @@ header {
     text-align: center;
     font-size: 8em ;
     color:#F7F6E7;
+}
+header p {
+    margin: 0;
+}
 
-} 
 main{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 50px;
 }
-.new{
-    text-align: left;
-    font: bold;   
+article
+{
+    text-align: center;
 }
-.text_scottish{
-    text-align: left;
+article img{
+    width : 400px; 
+    height : 300px ;
+}
+.text{
+    text-align: center;
     color: #3C1F0E;
+} /*detail*/
+#nav a{
+    float: right;
+    display: block;
+    color: #BBD38B;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 50px;
+    display: block;
 }
 
-.text_american_shorthair{
-    text-align: left;
-    color: #3C1F0E;
-    
-}
+#nav a:hover{
+    background-color: grey(172,51,51);
+    color: rgb(255,255,255);
+    display: block;
+}/*menu*/
 
-.text_british{
-    text-align: left;
-    color: #3C1F0E;
-}
-
-
-
-
-footer{
-    background-color:#BBD38B;
-    text-align: left;
-    color:grey;
-}
 
