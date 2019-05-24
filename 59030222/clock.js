@@ -3,8 +3,6 @@
     `use strict`;
     var canvas = document.querySelector(`#myClock`),
         canvasContext = canvas.getContext(`2d`),
-        getbtnDef = document.querySelector(`#btnDef`),
-        getbtnAno = document.querySelector(`#btnAno`),
         //clock settings
         cX = canvas.width / 2,
         cY = canvas.width / 2,
@@ -34,7 +32,7 @@
     }
     
     //part2
-    // animate the clock
+    //animate the clock
     function animateClock() {
         clearCanvas();
         refreshTime();
@@ -55,10 +53,11 @@
 
     //draw or redraw Clock after time refresh function is called
     function drawClock() {
-        drawClockBackground();
+        drawSecondHand();
         drawMinutesHand();
         drawHoursHand();
-        drawSecondHand();
+        drawLittleCircle();
+        drawDefault();
     }
 
     //part3
@@ -70,25 +69,7 @@
         canvasContext.closePath();
     }
 
-    function drawNumber() {
-        var ang;
-        var num;
-        canvasContext.font = radius * 0.15 + "px arial";
-        canvasContext.textBaseline = "middle";
-        canvasContext.textAlign = "center";
-        canvasContext.fillStyle = 'red ' ; //สีตัวอักษร
-        for(num = 1; num < 13; num++){
-          ang = num * Math.PI / 6;
-          canvasContext.rotate(ang);
-          canvasContext.translate(0, -radius * 0.8);
-          canvasContext.rotate(-ang);
-          canvasContext.fillText(num.toString(), cX, cY);
-          canvasContext.rotate(ang);
-          canvasContext.translate(0, radius * 0.8);
-          canvasContext.rotate(-ang);
-        }
-    }
-
+    //draw Hand for second
     function drawSecondHand() {
         var rotationUnit = seconds
             rotationFactor = Math.PI / 30,
@@ -98,6 +79,7 @@
         endY = cY - handLength * Math.cos(rotation);
         drawHand(cX, cY, endX, endY);
     }
+
     //draw Hand for minutes
     function drawMinutesHand() {
         var rotationUnit = minutes + seconds / 60,
@@ -121,7 +103,41 @@
     }
 
     //part4
+    function drawArcAtPosition(cX, cY, radius, startAngle, endAngle, counterClockwise, lineWidth) {
+        canvasContext.beginPath();
+        canvasContext.arc(cX, cY, radius, startAngle, endAngle, counterClockwise);
+        canvasContext.lineWidth = lineWidth;
+        canvasContext.strokeStyle = "#B868C6";
+        canvasContext.stroke();
+        canvasContext.closePath();
 
+    }
+
+    //จุดวางเข็ม
+    function drawLittleCircle(cX, cY) {
+        drawArcAtPosition(cX, cY, 4, 0 * Math.PI, 2 * Math.PI, false, 4);
+    }
+
+    //รูปแบบหน้าปัด
+    function drawNumber() {
+        var ang;
+        var num;
+        canvasContext.font = radius * 0.225 + "px arial";  //ขนาดอักษร
+        canvasContext.textBaseline = "middle";
+        canvasContext.textAlign = "center";
+        canvasContext.fillStyle = 'black';  //สีอักษร
+        for (num = 1; num <= 12; num++) { 
+            ang = num * Math.PI / 6;
+            canvasContext.rotate(ang);
+            canvasContext.translate(0, -radius * 0.8);
+            canvasContext.rotate(-ang);
+            canvasContext.fillText(num.toString(), cX, cY);
+            canvasContext.rotate(ang);
+            canvasContext.translate(0, radius * 0.8);
+            canvasContext.rotate(-ang);
+        }
+    }
+    
     function drawDefault() {
         var correction = 1 / 300,
             shiftUnit = 1 / 170,
@@ -139,44 +155,6 @@
             drawArcAtPosition(cX, cY, radius, angleCurrentPositionBegin * Math.PI, angleCurrentPositionEnd * Math.PI, false, lineWidth);
         }
         drawLittleCircle(cX, cY);
-    }
-
-    function drawAnother() {
-        canvasContext.beginPath();
-        canvasContext.strokeStyle = "#EEE"; //สีขอบและสีเข็ม
-        canvasContext.fillStyle = "#663399"; //สีพื้นนาฬิกา
-        canvasContext.lineWidth = 10;
-        canvasContext.arc(cX, cY, radius, 0, 2 * Math.PI);
-        canvasContext.fill();
-        canvasContext.stroke();
-        canvasContext.closePath();
         drawNumber();
-    }
-
-    function drawClockBackground() {
-        drawDefault();
-        getbtnDef.addEventListener('click',btnSelectDef,false);
-        getbtnAno.addEventListener('click',btnSelectAno,false);
-    }
-
-    function btnSelectDef() {
-        drawClockBackground = drawDefault;
-    }
-
-    function btnSelectAno() {
-        drawClockBackground = drawAnother;
-    }
-
-    function drawArcAtPosition(cX, cY, radius, startAngle, endAngle, counterClockwise, lineWidth) {
-        canvasContext.beginPath();
-        canvasContext.arc(cX, cY, radius, startAngle, endAngle, counterClockwise);
-        canvasContext.lineWidth = lineWidth;
-        canvasContext.strokeStyle = "black";
-        canvasContext.stroke();
-        canvasContext.closePath();
-    }
-
-    function drawLittleCircle(cX, cY) {
-        drawArcAtPosition(cX, cY, 4, 0 * Math.PI, 2 * Math.PI, false, 4);
     }
 })();

@@ -1,23 +1,40 @@
 body{
-    background-color: #F7F6E7;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5DACE;
+    justify-content: center;
+    margin: 0px;
 }
 
-.Text{
+
+#my{
+   width: 600px;
+   height: 600px;
+   margin: auto;
+   object-fit: cover;
+   margin-top: 20px;
+   
+}
+
+#MainAbt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+#MainClk {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#MainClk article {
     text-align: center;
-    color:#FF634D ;  
+    font-size: 8rem ;
+    color: black;
+    font-family: 'Mali', cursive;
+    font-family: 'Itim', cursive;
 }
-
-#me_pic{
-    height: 400px;
-    width: 100;
-    margin: 20px 40px 50px 200px;
-    
-    
-}
-
-#name{margin-top: 50px}
-#nickname{margin-top: 50px}
-#old{margin-top: 50px}
 
 article img{
     width : 400px; 
@@ -25,23 +42,30 @@ article img{
 }
 
 header {
-    background-color:#777D71;
-    text-align: left;
-    font-size: 4rem ;
-    color:#FED361;
+    background-color:#CEB4A7;
+    text-align: center;
+    font-size: 8rem ;
+    color:#F7F6E7;
+    font-family: 'Mali', cursive;
+    font-family: 'Itim', cursive;
+    border: 3px solid #E7D0A9;
+}
+header p{
+    margin: 0;
 }
 
 .pic_logo{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .pic_logo img{
-    height: 50px;
+    height: 100px;
 }
 
 .pic_logo button{
-    background-color: rgb(0,0,0,0);
+    background-color: rgb(2,2,2,2);
     border: none;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -55,25 +79,51 @@ header {
 nav a{
     float: right;
     display: block;
-    color: #BBD38B;
+    color:  #7D887A;;
     text-align: center;
     padding: 18px;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 35px;
+    display: block;
+    font-family: 'Mali', cursive;
+    font-family: 'Itim', cursive;
+    border: 3px solid #B32442;
 }
 
 #nav a:hover{
     background-color: grey(172,51,51);
     color: rgb(255,255,255);
+    display: block;
 }
 
 #name1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #9A073C;S
+
+    color: #2D5D7C;
+    text-align: center;
+    text-justify: auto;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#ME{
+    width: 600px;
+    height: 600px;
+    margin: auto; 
+    object-fit: cover;
+    margin-top: 20px;
 }
 
 footer{
-    background-color:#BBD38B;
+    background-color:#CEB4A7;
     text-align: center;
-    color:grey;
+    color:#9A073C;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div{
+    font-family: 'Mali', cursive;
+    font-family: 'Itim', cursive;
 }
