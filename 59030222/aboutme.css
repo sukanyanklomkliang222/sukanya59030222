@@ -20,18 +20,21 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px;
+    margin: 2px;
 }
 #MainClk {
-    margin: 0px;
+    margin: 3px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    
 }
+
+
 
 #MainClk article {
     text-align: center;
-    font-size: 8rem ;
-    color: black;
+    font-size: 30px ;
+    color: #2D5D7C;
     font-family: 'Mali', cursive;
     font-family: 'Itim', cursive;
 }
@@ -65,9 +68,9 @@ header p{
 }
 
 .pic_logo button{
-    background-color: rgb(2,2,2,2);
+    background-color: #E5DACE;
     border: none;
-    transition: all 0.3s ease 0s;
+    transition: all 0.4s ease 0s;
     cursor: pointer;
     outline: none;
 }
@@ -79,7 +82,7 @@ header p{
 nav a{
     float: right;
     display: block;
-    color:  #7D887A;;
+    color:  #2D5D7C;;
     text-align: center;
     padding: 18px;
     text-decoration: none;
@@ -112,6 +115,16 @@ nav a{
     object-fit: cover;
     margin-top: 20px;
 }
+#picme{
+    width: 600px;
+    height: 600px;
+    margin: auto; 
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+
 
 footer{
     background-color:#CEB4A7;

@@ -51,7 +51,7 @@ p {
 #nav a{
     float: right;
     display: block;
-    color: #7D887A;
+    color: #2D5D7C;
     text-align: center;
     padding: 18px;
     text-decoration: none;
@@ -90,7 +90,12 @@ p {
 #pic_amrican_curl{
     border: 2px solid #CE8523;
 }
-
+#pic_Feliscatus{
+    border: 2px solid #CE8523;
+}
+#pic_oriental{
+    border: 2px solid #CE8523;
+}
 
 
 /*small screen*/
