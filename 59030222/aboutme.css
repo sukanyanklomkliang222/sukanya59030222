@@ -13,14 +13,6 @@ body{
    object-fit: cover;
    margin-top: 20px;  
 }
-/* 
-#MainAbt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2px;
-}*/
-
 /*กำหนดนาฬิกา*/
 #MainClk {
     margin: 3px;
@@ -135,6 +127,7 @@ body {
   background-color: #E5DACE;
 }
 
+/*นาฬิกา*/
 /* <link href="https://fonts.googleapis.com/css?family" rel="stylesheet"> */
 #inside {
 font-family: 'Mali', cursive;
