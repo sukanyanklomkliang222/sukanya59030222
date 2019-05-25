@@ -39,11 +39,7 @@ article img{
     font-family: 'Mali', cursive;
     font-family: 'Itim', cursive;
     font-size: 20px;
-
 } /*detail*/
-
-
-
 p {
     font-family: 'Mali', cursive;
     font-family: 'Itim', cursive;
@@ -59,15 +55,12 @@ p {
     display: block;
     font-family: 'Mali', cursive;
     font-family: 'Itim', cursive;
-   
 }
-
 #nav a:hover{
     background-color: grey(172,51,51);
     color: rgb(255,255,255);
     display: block;
 }
-
 /*กรอบแมว*/
 #pic_scottish{
     border: 2px solid #CE8523;
