@@ -74,6 +74,7 @@ header p{
 .pic_logo button:hover{
     transform: translateY(-5px);
 }
+/*iรายละเอียดเกี่ยวกับปุ่ม Home */ 
 nav a{
     float: right;
     display: block;
@@ -92,6 +93,7 @@ nav a{
     color: rgb(255,255,255);
     display: block;
 }
+/*กำหนดขนาดและสีของข้อความ*/
 #name1{
     color: #2D5D7C;
     text-align: center;
@@ -99,6 +101,7 @@ nav a{
     font-size: 20px;
     margin-top: 20px;
 }
+/*กำหนดขนาดของรูปภาพ*/
 #ME{
     width: 600px;
     height: 600px;
